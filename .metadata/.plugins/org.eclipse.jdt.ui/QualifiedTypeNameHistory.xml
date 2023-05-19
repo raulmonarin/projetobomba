@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="model.UserLogin"/>
+    <fullyQualifiedTypeName name="dao.Login"/>
+    <fullyQualifiedTypeName name="model.Employee"/>
+</qualifiedTypeNameHistroy>
