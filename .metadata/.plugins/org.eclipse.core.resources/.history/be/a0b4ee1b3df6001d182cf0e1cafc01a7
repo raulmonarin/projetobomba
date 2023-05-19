@@ -1,0 +1,26 @@
+package dao;
+
+import model.Employee;
+
+
+import java.sql.*;
+import model.Employee;
+
+public class Login {
+	
+	public int loginVerify(Employee employee) throws ClassNotFoundException {
+		String SELECT_USER_SQL =  "SELECT username, password WHERE username = ? and password = ?;";
+		
+        Class.forName("com.mysql.jdbc.Driver");
+
+        try (Connection connection = DriverManager
+	            .getConnection("jdbc:mysql://localhost:3306/employees", "root", "")){
+        	Statement st = connection.createStatement();
+        	ResultSet rs = st.executeQuery(query);
+        	
+        } catch (SQLException e) {
+        	return (Integer) null;
+        }
+        return 1;
+	}
+}
